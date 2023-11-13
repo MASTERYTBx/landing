@@ -1,0 +1,104 @@
+/* styles.css */
+
+body {
+    font-family: 'Archivo Black', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+.hero {
+    background: none;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.logo {
+    margin-bottom: 5px;
+}
+
+.logo img {
+    max-width: 70%;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin: 20px 0;
+}
+
+
+
+.hero p {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 120px;
+    background-color: #dbf01c;
+    color: #da4040;
+    text-decoration: none;
+    border: 2px solid #e14e29;
+    font-weight: bold;
+    border-radius: 60px;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cta-button:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background-color: #e14e29;
+    opacity: 0.6;
+    transform: translateX(-50%);
+    z-index: -1;
+    filter: blur(20px);
+}
+
+.cta-button:hover:before {
+    animation: neon 1s ease-in-out infinite;
+    background-color: #fff; /* Change the background color on hover */
+}
+
+.cta-button:hover {
+    background-color: #e14e29; /* Change the background color on hover */
+    color: #000; /* Change the text color on hover */
+}
+
+@keyframes neon {
+    0% {
+        opacity: 0.6;
+        filter: blur(20px);
+    }
+    50% {
+        opacity: 0.3;
+        filter: blur(10px);
+    }
+    100% {
+        opacity: 0.6;
+        filter: blur(20px);
+    }
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
