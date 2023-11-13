@@ -1,12 +1,16 @@
 /* styles.css */
 
 body {
-    font-family: 'Archivo Black', sans-serif;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #000;
     color: #fff;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+html {
+    overflow: hidden; /* Prevent scrolling */
 }
 
 .hero {
@@ -16,45 +20,47 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
+    position: relative;
 }
 
 .hero-content {
     max-width: 600px;
+    margin-top: -295px; /* Adjust the margin-top to move content up */
 }
 
 .logo {
-    margin-bottom: 5px;
+    margin-bottom: -40px;
+    margin-top: -20px; /* Adjust the margin-top to move the logo up */
 }
 
 .logo img {
-    max-width: 70%;
+    max-width: 400px;
 }
 
 .hero h1 {
-    font-size: 36px;
+    font-size: 80px;
     margin: 20px 0;
 }
 
-
-
 .hero p {
-    font-size: 30px;
+    font-size:30px;
+    margin-top: 30px;
     margin-bottom: 30px;
 }
-
 
 .cta-button {
     display: inline-block;
     padding: 15px 120px;
-    background-color: #dbf01c;
-    color: #da4040;
+    background-color: #7cde19;
+    color: #fff;
     text-decoration: none;
-    border: 2px solid #e14e29;
+    border: 2px solid #29e173;
     font-weight: bold;
     border-radius: 60px;
     position: relative;
     overflow: hidden;
     transition: background-color 0.3s, color 0.3s;
+    margin-top: 5px;
 }
 
 .cta-button:before {
@@ -73,12 +79,12 @@ body {
 
 .cta-button:hover:before {
     animation: neon 1s ease-in-out infinite;
-    background-color: #fff; /* Change the background color on hover */
+    background-color: #fff;
 }
 
 .cta-button:hover {
-    background-color: #e14e29; /* Change the background color on hover */
-    color: #000; /* Change the text color on hover */
+    background-color: #297fe1;
+    color: rgb(17, 212, 179)
 }
 
 @keyframes neon {
@@ -94,11 +100,4 @@ body {
         opacity: 0.6;
         filter: blur(20px);
     }
-}
-
-footer {
-    background-color: #000;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
 }
