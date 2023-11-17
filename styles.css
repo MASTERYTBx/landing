@@ -13,7 +13,6 @@ body, html {
     justify-content: center;
     text-align: center;
 }
-
 .content-wrapper {
     height: 100vh;
     display: flex;
@@ -26,13 +25,13 @@ body, html {
 
 .central-image img {
     max-width: 15%; /* Adjust the width to scale the image size */
-    margin-bottom: 2rem; /* Provide space between the image and the title */
+    margin-bottom: -2rem; /* Provide space between the image and the title */
 }
 
 
 .central-image img {
     height: auto;
-    max-width: 100%;
+    max-width: 90%;
 }
 
 .text-content h1 {
@@ -42,7 +41,7 @@ body, html {
 
 .text-content p {
     font-size: 1.5rem; /* Adjust the font size as needed */
-    margin-bottom: 2rem; /* Space between subtitle and button */
+    margin-bottom: 50px; /* Space between subtitle and button */
 }
 
 .cta-button {
@@ -77,9 +76,61 @@ footer a {
     margin: 0 1rem; /* Adjust the margin to control space between links */
 }
 
+
+
 .disclaimer {
     color: #666;
     font-size: 0.875rem; /* Adjust the font size as needed */
     margin-top: 1rem;
 }
 
+
+
+.newsletter-container {
+    width: 100%;
+    max-width: 600px;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+p {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #333;
+    background-color: #222;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.submit-btn {
+    padding: 1rem 3rem;
+    background-color: #e6a117;
+    color: #000;
+    text-decoration: none;
+    border: none;
+    font-weight: bold;
+    border-radius: 50px;
+    margin-bottom: 3rem;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Added transform to the transition */
+    /* No animation property here, it's not needed for this effect */
+}
+
+.submit-btn:hover {
+    background-color: #ffc107; /* Color changes to this when hovered */
+    color: #000;
+    transform: scale(1.05); /* Scales up the button a bit when hovered */
+}
